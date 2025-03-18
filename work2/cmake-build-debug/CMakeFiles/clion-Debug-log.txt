@@ -1,0 +1,37 @@
+"E:\clion\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/clion/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" "-DCMAKE_CUDA_COMPILER=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/bin/nvcc.exe" -G Ninja -S E:\gpucoding\work2 -B E:\gpucoding\work2\cmake-build-debug
+CMake Error at E:/clion/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:751 (message):
+  Compiling the CUDA compiler identification source file
+  "CMakeCUDACompilerId.cu" failed.
+
+  Compiler: C:/Program Files/NVIDIA GPU Computing
+  Toolkit/CUDA/v12.2/bin/nvcc.exe
+
+  Build flags:
+
+  Id flags: --keep;--keep-dir;tmp -v
+
+
+
+  The output was:
+
+  1
+
+  nvcc fatal : Cannot find compiler 'cl.exe' in PATH
+
+
+
+
+
+Call Stack (most recent call first):
+  E:/clion/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)
+  E:/clion/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)
+  E:/clion/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCUDACompiler.cmake:307 (CMAKE_DETERMINE_COMPILER_ID)
+  CMakeLists.txt:3 (project)
+
+
+-- Configuring incomplete, errors occurred!
+
+无法获取编译器信息:
+	编译器退出，错误代码 1: "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2\bin\nvcc.exe" -D_WINDOWS "-Xcompiler= /EHsc" "-Xcompiler= -Ob0 -Od /RTC1" --generate-code=arch=compute_52,code=[compute_52,sm_52] -Xcompiler=-MDd -Xcompiler=-Zi --dryrun C:\Users\User\AppData\Local\Temp\compiler-file3576822366915713607.cu
+	
+	
